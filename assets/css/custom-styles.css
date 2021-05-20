@@ -150,5 +150,23 @@ body.dark-mode a.navbar-brand {
 
 body.dark-mode input.form-control {
     background-color: #484848;
-    color: #fff
+    color: #fff;
+}
+
+body.dark-mode .card-header {
+    background-color: #696969;
+    border-bottom: 1px solid rgb(255 255 255);
+}
+
+body.dark-mode a.nav-link.active {
+    background-color: #696969;
+    color: #97b6f3;
+}
+
+body.dark-mode a.nav-link {
+    color: #97b6f3;
+}
+
+body.dark-mode div.text-start {
+    background-color: #696969
 }

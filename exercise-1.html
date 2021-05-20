@@ -85,22 +85,30 @@
                 </div>
                 <div class="card-body tab-content text-start">
                     <div class="tab-pane active" id="list1-overview" role="tabpanel">
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">Submitted at 20/05/2021, 05:34:08</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success"><i class="fas fa-check"></i> Submitted at 20/05/2021, 05:34:08</a>
                         <a href="#" class="list-group-item list-group-item-action list-group-item-warning">
-                            <div class="spinner-border text-warning" role="status">
+                            <div class="spinner-border spinner-border-sm text-warning" role="status">
                                 <span class="visually-hidden">Loading...</span>
                             </div>
-                            Grading... (5/10)
+                            Grader is running... (5/10)
                         </a>
                     </div>
                     <div class="tab-pane" id="list1-grader" role="tabpanel" aria-labelledby="list1-grader">
+                        <div class="alert alert-warning" role="alert">
+                            <p><div class="spinner-border spinner-border-sm text-warning" role="status"><span class="visually-hidden">Loading...</span></div> Grader is running...</p>
+                            <p>Progress : Running test 5 (50%)</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 40%" aria-valuenow="4" aria-valuemin="0" aria-valuemax="10"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10"></div>
+                        </div>
                         <div class="container border rounded-3">
                             <samp>
-                                <p>Test 1 : Success</p>
-                                <p>Test 2 : Success</p>
-                                <p>Test 3 : Success</p>
-                                <p>Test 4 : Success</p>
-                                <p>Test 5 : Grading...</p>
+                                <p>Test 1 : Correct</p>
+                                <p>Test 2 : Correct</p>
+                                <p>Test 3 : Correct</p>
+                                <p>Test 4 : Correct</p>
+                                <p>Test 5 : Running...</p>
                                 <p>Test 6 : Waiting</p>
                                 <p>Test 7 : Waiting</p>
                                 <p>Test 8 : Waiting</p>
@@ -136,22 +144,41 @@
                 </div>
                 <div class="card-body tab-content text-start">
                     <div class="tab-pane active" id="list2-overview" role="tabpanel">
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">Submitted at 20/05/2021, 05:34:08</a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
-                            <i class="fas fa-times"></i> Grading Failed (6/10)
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success"><i class="fas fa-check"></i> Submitted at 20/05/2021, 05:34:08</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-warning">
+                            <div class="spinner-border spinner-border-sm text-warning" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            Grader is running... (8/10)
                         </a>
                     </div>
                     <div class="tab-pane" id="list2-grader" role="tabpanel" aria-labelledby="list2-grader">
+                        <div class="alert alert-warning" role="alert">
+                            <p><div class="spinner-border spinner-border-sm text-warning" role="status"><span class="visually-hidden">Loading...</span></div> Grader is running...</p>
+                            <p>Progress : Running test 8 (80%)</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 60%" aria-valuenow="6" aria-valuemin="0" aria-valuemax="10"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 10%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="10"></div>
+                        </div>
                         <div class="container border rounded-3">
                             <samp>
-                                <p>Test 1 : Success</p>
-                                <p>Test 2 : Success</p>
-                                <p>Test 3 : Success</p>
-                                <p>Test 4 : Success</p>
+                                <p>Test 1 : Correct</p>
+                                <p>Test 2 : Correct</p>
+                                <p>Test 3 : Correct</p>
+                                <p>Test 4 : Correct</p>
                                 <p>Test 5 : Failed</p>
-                                <p>Test 6 : Success</p>
-                                <p>Test 7 : Success</p>
-                                <p>Test 8 : Waiting</p>
+                                <div class="container border rounded-3">
+                                    <samp>
+                                        <p>Traceback (most recent call last):</p>
+                                        <p>File "<pyshell#0>", line 1, in</p>
+                                        <p>my_data + 5</p>
+                                        <p>ValueError: invalid literal for int() with base 10: 'ichi'</p>
+                                    </samp>
+                                </div>
+                                <p>Test 6 : Correct</p>
+                                <p>Test 7 : Correct</p>
+                                <p>Test 8 : Running...</p>
                                 <p>Test 9 : Waiting</p>
                                 <p>Test 10 : Waiting</p>
                             </samp>
@@ -164,12 +191,100 @@
 
 
         <div class="row mb-3 border border-success rounded-3">
-            <div class="col-md-3 themed-grid-col">1234</div>
+            <div class="col-md-3 themed-grid-col">5555</div>
             <div class="col-md-6 themed-grid-col submission-true">True</div>
             <div class="col-md-3 themed-grid-col text-end">
-                <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#list3Collapse" aria-expanded="false" aria-controls="list3Collapse">
                     View
                 </button>
+            </div>
+        </div>
+        <div class="collapse" id="list3Collapse">
+            <div class="card text-center border border-success rounded-3">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="student3-list" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#list3-overview" role="tab" aria-controls="list3-overview" aria-selected="false" aria-current="true">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#list3-grader" role="tab" aria-controls="list3-grader" aria-selected="false">Grader</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body tab-content text-start">
+                    <div class="tab-pane active" id="list3-overview" role="tabpanel">
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success"><i class="fas fa-check"></i> Submitted at 20/05/2021, 05:34:08</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+                            <i class="fas fa-check"></i> Grading success!
+                        </a>
+                    </div>
+                    <div class="tab-pane" id="list3-grader" role="tabpanel" aria-labelledby="list3-grader">
+                        <div class="alert alert-success" role="alert">
+                            <p><i class="fas fa-check"></i> Grading success!</p>
+                            <p>Score: 0/10</p>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10"></div>
+                        </div>
+                        <div class="container border rounded-3">
+                            <samp>
+                                <p>Test 1 : Failed</p>
+                                <p>Test 2 : Failed</p>
+                                <p>Test 3 : Failed</p>
+                                <p>Test 4 : Failed</p>
+                                <p>Test 5 : Failed</p>
+                                <p>Test 6 : Failed</p>
+                                <p>Test 7 : Failed</p>
+                                <p>Test 8 : Failed</p>
+                                <p>Test 9 : Failed</p>
+                                <p>Test 10 : Failed</p>
+                            </samp>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3 border rounded-3">
+            <div class="col-md-3 themed-grid-col">5566</div>
+            <div class="col-md-6 themed-grid-col submission-false">False</div>
+            <div class="col-md-3 themed-grid-col text-end">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#list4Collapse" aria-expanded="false" aria-controls="list1Collapse">
+                    View
+                </button>
+            </div>
+        </div>
+        <div class="collapse" id="list4Collapse">
+            <div class="card text-center border border-secondary rounded-3">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="student4-list" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#list4-overview" role="tab" aria-controls="list4-overview" aria-selected="false" aria-current="true">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#list4-grader" role="tab" aria-controls="list4-grader" aria-selected="false">Grader</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body tab-content text-start">
+                    <div class="tab-pane active" id="list4-overview" role="tabpanel">
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary"><i class="fas fa-times"></i> No submission found</a>
+                    </div>
+                    <div class="tab-pane" id="list4-grader" role="tabpanel" aria-labelledby="list4-grader">
+                        <div class="alert alert-secondary" role="alert">
+                            <div class="spinner-grow spinner-grow-sm text-secondary" role="status"><span class="visually-hidden">Loading...</span></div> Grader is waiting for submission
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10"></div>
+                        </div>
+                        <div class="container border rounded-3">
+                            <samp>
+                                Waiting for submission
+                            </samp>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
