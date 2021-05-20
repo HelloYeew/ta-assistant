@@ -131,6 +131,10 @@ body.dark-mode main * {
     color: #f5f5f5; /* Dark mode font color*/
 }
 
+body.dark-mode .link-dark {
+    color: #fff
+}
+
 body.dark-mode div.panel-body {
     background-color: #2d2d2d;
     color: #fff
@@ -158,6 +162,18 @@ body.dark-mode .card-header {
     border-bottom: 1px solid rgb(255 255 255);
 }
 
+body.dark-mode a {
+    color: #97b6f3;
+}
+
+body.dark-mode a.dropdown-item {
+    color: #212529;
+}
+
+body.dark-mode a.btn-primary {
+    color: #fff
+}
+
 body.dark-mode a.nav-link.active {
     background-color: #696969;
     color: #97b6f3;
@@ -167,6 +183,50 @@ body.dark-mode a.nav-link {
     color: #97b6f3;
 }
 
+body.dark-mode .breadcrumb-item+.breadcrumb-item::before {
+    color: #b5b5b5;
+}
+
+body.dark-mode li.breadcrumb-item {
+    color: #b5b5b5;
+}
+
 body.dark-mode div.text-start {
     background-color: #696969
+}
+
+body.dark-mode div.submission-true {
+    color: #00ab58
+}
+
+body.dark-mode .btn-success {
+    background-color: #00ab58
+}
+
+body.dark-mode .border-success {
+    border-color: #00ab58!important
+}
+
+body.dark-mode h5.night-header {
+    color: #fff
+}
+
+body.dark-mode div.modal-header {
+    background-color: #5f5f5f;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+
+body.dark-mode div.modal-body {
+    background-color: #5f5f5f;
+}
+
+body.dark-mode div.modal-footer {
+    background-color: #5f5f5f;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+body.dark-mode button.btn-close {
+    filter: invert(1)
 }
