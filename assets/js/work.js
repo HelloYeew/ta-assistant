@@ -17,3 +17,8 @@ $('#student4-list a').on('click', function (e) {
     e.preventDefault()
     $(this).tab('show')
 })
+
+$('#student5-list a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+})
