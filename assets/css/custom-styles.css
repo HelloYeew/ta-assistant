@@ -157,7 +157,7 @@ body.dark-mode header.border-bottom {
 }
 
 body.dark-mode a.navbar-brand {
-    color: #97b6f3; /* Dark mode font color*/
+    color: #97b6f3;
 }
 
 body.dark-mode input.form-control {
@@ -246,6 +246,10 @@ body.dark-mode .text-black-50 {
 body.dark-mode .form-control {
     background-color: #484848;
     color: #fff;
+}
+
+body.dark-mode a.breadcrumb-link-color {
+    color: #97b6f3;
 }
 
 /*Comment box in dark mode*/
