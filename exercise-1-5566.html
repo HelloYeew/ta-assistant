@@ -82,17 +82,44 @@
       <li class="breadcrumb-item"><a class="breadcrumb-link-color" href="courses-teacher.html">Courses</a></li>
       <li class="breadcrumb-item"><a class="breadcrumb-link-color" href="works-teacher.html">Computer Programming I</a></li>
       <li class="breadcrumb-item"><a class="breadcrumb-link-color" href="exercise-1.html">Exercise 1</a></li>
-      <li class="breadcrumb-item active" aria-current="page">5566's Submisison</li>
+      <li class="breadcrumb-item active" aria-current="page">Student Submisison</li>
     </ol>
   </nav>
 </div>
 
 <div class="container px-4">
 
-  <h1>Exercise 1 Score Detail</h1>
+  <h1>Student Submission</h1>
   <br>
-  <p>ID : 6310545566</p>
-  <p>Score : 10/10</p>
+  <div class="d-grid gap-3">
+    <div class="row">
+      <div class="col-3">Student ID</div>
+      <div class="col-9">6310545566</div>
+    </div>
+    <div class="row">
+      <div class="col-3">Submission Status</div>
+      <div class="col-9 submission-true">Submitted</div>
+    </div>
+    <div class="row">
+      <div class="col-3">Graded Status</div>
+      <div class="col-9 submission-true">Graded</div>
+    </div>
+  </div>
+  <br>
+  <div class="col-9"><button type="button" class="btn btn-primary"><i class="fas fa-download"></i> Download Submitted File</button></div>
+  <br>
+  <h2><i class="fas fa-star"></i> Scoring</h2>
+  <br>
+  <div class="alert alert-success" role="alert">
+    <i class="fas fa-check"></i> Already graded by Pippi Osu at 25/05/2021, 04:51:03 but you can change the score.
+  </div>
+  <div class="mb-3">
+    <label for="score" class="form-label">Submit Score</label>
+    <input class="form-control" type="number" placeholder="Out of 10" aria-label="default input example" id="score">
+  </div>
+  <button type="button" class="btn btn-primary"><i class="fas fa-check"></i> Submit Score</button>
+  <br>
+  <br>
   <h2><i class="fas fa-comment"></i> Comment</h2>
   <br>
 
