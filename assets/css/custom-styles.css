@@ -170,9 +170,9 @@ body.dark-mode .card-header {
     border-bottom: 1px solid rgb(255 255 255);
 }
 
-body.dark-mode a {
-    color: #97b6f3;
-}
+/*body.dark-mode a {*/
+/*    color: #97b6f3;*/
+/*}*/
 
 body.dark-mode a.dropdown-item {
     color: #212529;
