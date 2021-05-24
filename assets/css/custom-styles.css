@@ -123,6 +123,14 @@ div.submission-true {
     color: #177b4b
 }
 
+#img-upload{
+    width: 50%;
+}
+
+div.font-awesome {
+    font-family: Arial, FontAwesome;
+}
+
 /*Dark mode*/
 
 body.dark-mode,
