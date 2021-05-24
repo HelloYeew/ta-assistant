@@ -207,6 +207,10 @@ body.dark-mode div.submission-true {
     color: #00ab58
 }
 
+body.dark-mode div.submission-graded {
+    color: #0dcaf0
+}
+
 body.dark-mode .btn-success {
     background-color: #00ab58
 }
