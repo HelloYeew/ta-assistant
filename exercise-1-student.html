@@ -94,21 +94,6 @@
     <p>Score : 10/10</p>
     <h2><i class="fas fa-comment"></i> Comment</h2>
 
-<!--    <div>-->
-<!--        <label for="comment" class="form-label">Private Comment</label>-->
-<!--        <textarea class="form-control" id="comment" rows="3"></textarea>-->
-<!--        <div class="container">-->
-<!--            <div class="row">-->
-<!--                <div class="col text-muted">-->
-<!--                    <p style="font-family:Arial, FontAwesome">&#xF60F; Markdown format support</p>-->
-<!--                </div>-->
-<!--                <div class="col text-end">-->
-<!--                    <a class="btn btn-primary" role="button">Send</a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-
     <div class="container">
         <div class="d-flex gap-2 justify-content-center row">
             <div class="p-2">
@@ -159,8 +144,11 @@ using UnityEngine.SceneManagement;</code></pre>
     <div class="mb-3">
         <div class="row">
             <div class="col-md-12">
-                <label for="comment-md" class="form-label">Send Private Comment</label>
-                <textarea id="comment-md" name="comment" placeholder="Say something..."></textarea>
+                <div class="md-preview-span">
+                    <label for="comment-md" class="form-label">Send Private Comment</label>
+                    <textarea id="comment-md" name="comment" placeholder="Say something..."></textarea>
+<!--                    TODO: Span tag like code block will all be white since CSS forced it to be white. Must fix that.-->
+                </div>
                 <br />
                 <div class="row">
                     <div class="col">
@@ -175,7 +163,7 @@ using UnityEngine.SceneManagement;</code></pre>
                 </div>
 
                 <div class="collapse" id="previewBox">
-                    <div class="card card-body">
+                    <div class="card card-body md-preview-box">
                         <div id="comment-md-preview-container">
                             <div class="well well-sm well-light md-preview margin-top-10" id="comment-md-preview"></div>
                         </div>
@@ -229,7 +217,6 @@ using UnityEngine.SceneManagement;</code></pre>
 <script src="https://cdn.rawgit.com/toopay/bootstrap-markdown/master/js/bootstrap-markdown.js"></script>
 <script src="https://rawgit.com/lodev09/jquery-filedrop/master/jquery.filedrop.js"></script>
 <script src="https://rawgit.com/jeresig/jquery.hotkeys/master/jquery.hotkeys.js"></script>
-<!--<script data-require="marked@*" data-semver="0.3.1" src="http://cdnjs.cloudflare.com/ajax/libs/marked/0.3.1/marked.js"></script>-->
 <script src="assets/js/marked.js"></script>
 <link rel="stylesheet" href="https://cdn.rawgit.com/toopay/bootstrap-markdown/master/css/bootstrap-markdown.min.css" />
 <script src="assets/js/highlight.pack.js"></script>
