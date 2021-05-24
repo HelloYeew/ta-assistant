@@ -5,3 +5,14 @@
 Design draft of TA Assistant by using Bootstrap.
 
 live view : https://ta-assistant-draft.netlify.app/
+
+## Library
+
+This preview use a following library
+
+- [Bootstrap](https://getbootstrap.com/)
+- [Jquery](https://jquery.com/)
+- [Highlight JS](https://highlightjs.org/)
+- [Popper JS](https://popper.js.org/)
+- [Bootstrap Markdown](https://github.com/refactory-id/bootstrap-markdown)
+- [Marked](https://github.com/markedjs/marked)
