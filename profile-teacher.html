@@ -9,14 +9,14 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Primary Meta Tags -->
-  <title>Profile Settings - TA Assistant</title>
-  <meta name="title" content="Profile Settings - TA Assistant">
+  <title>Profile - TA Assistant</title>
+  <meta name="title" content="Profile - TA Assistant">
   <meta name="description" content="">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ta-assistant-draft.netlify.app/">
-  <meta property="og:title" content="Profile Settings - TA Assistant">
+  <meta property="og:title" content="Profile - TA Assistant">
   <meta property="og:description" content="">
   <meta property="og:image" content="https://ta-assistant-draft.netlify.app/android-chrome-192x192.png">
 
@@ -41,7 +41,7 @@
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <a class="navbar-brand" href="settings-profile.html">Profile Settings</a>
+        <a class="navbar-brand" href="profile-teacher.html">Profile</a>
       </ul>
 
       <form id="search" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -83,16 +83,6 @@
 
 <div class="container">
   <div class="row flex-lg-nowrap">
-    <div class="col-12 col-lg-auto mb-3" style="width: 200px;">
-      <div class="card p-3 setting-menu-box">
-        <div class="e-navlist e-navlist--active-bg">
-          <ul class="nav">
-            <li class="nav-item"><a class="nav-link px-2" href="settings-profile.html"><i class="fa fa-fw fa-user-circle mr-1"></i><span> Profile</span></a></li>
-            <li class="nav-item"><a class="nav-link px-2" href="settings-system.html"><i class="fa fa-fw fa-cog mr-1"></i><span> Settings</span></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
     <div class="col">
       <div class="row">
@@ -110,13 +100,7 @@
                     <div class="text-center text-sm-left mb-2 mb-sm-0">
                       <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap text-start">Dead Inside</h4>
                       <p class="text-start">Software and Knowledge Engineering</p>
-<!--                      <div class="text-muted text-start"> Year 2 </div>-->
-                      <div class="text-start">
-                        <button class="btn btn-primary" type="button">
-                          <i class="fa fa-fw fa-camera"></i>
-                          <span>Change Photo</span>
-                        </button>
-                      </div>
+                      <!--                      <div class="text-muted text-start"> Year 2 </div>-->
                     </div>
                     <div class="text-sm-right">
                       <div class="text-end"><span class="badge bg-success">Teacher</span></div>
@@ -124,9 +108,6 @@
                     </div>
                   </div>
                 </div>
-                <ul class="nav nav-tabs">
-                  <li class="nav-item"><a href="" class="active nav-link">Settings</a></li>
-                </ul>
                 <div class="tab-content pt-3">
                   <div class="tab-pane active">
                     <form class="form" novalidate="">
@@ -136,7 +117,7 @@
                             <div class="col">
                               <div class="form-group">
                                 <label>Full Name</label>
-                                <input class="form-control" type="text" name="name" placeholder="Dead Inside" value="Dead Inside">
+                                <input class="form-control" type="text" name="name" placeholder="Dead Inside" value="Dead Inside" disabled readonly>
                               </div>
                             </div>
                             <div class="col">
@@ -160,7 +141,7 @@
                             <div class="col mb-3">
                               <div class="form-group">
                                 <label>Contact</label>
-                                <textarea class="form-control" rows="5" placeholder="Discord, Line ID or something that you use. ¯\_(ツ)_/¯">
+                                <textarea rows="3" class="form-control" placeholder="Discord, Line ID or something that you use. ¯\_(ツ)_/¯" disabled readonly>
 Discord : HelloYeew#2740
 Line ID : ilovepippi
 osu! : pippi</textarea>
@@ -177,7 +158,7 @@ osu! : pippi</textarea>
             </div>
             <div class="card-footer text-muted">
               <div class="col d-flex justify-content-end">
-                <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i> Save Changes</button>
+                <button class="btn btn-primary" type="submit"><i class="fas fa-envelope"></i> Send Email</button>
               </div>
             </div>
           </div>
