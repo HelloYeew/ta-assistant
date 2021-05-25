@@ -203,9 +203,9 @@ body.dark-mode li.breadcrumb-item {
     color: #b5b5b5;
 }
 
-body.dark-mode div.text-start {
-    background-color: #696969
-}
+/*body.dark-mode div.text-start {*/
+/*    background-color: #696969*/
+/*}*/
 
 body.dark-mode div.submission-true {
     color: #00ab58
@@ -263,6 +263,11 @@ body.dark-mode a.breadcrumb-link-color {
 body.dark-mode .column-centered {
     float: none;
     margin: 0 auto;
+}
+
+body.dark-mode .setting-menu-box,
+body.dark-mode .setting-main-box {
+    background-color: #3c3c3c!important;
 }
 
 /*Comment box in dark mode*/
