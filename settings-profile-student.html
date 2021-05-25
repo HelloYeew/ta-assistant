@@ -9,14 +9,14 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Primary Meta Tags -->
-  <title>Profile - TA Assistant</title>
-  <meta name="title" content="Profile - TA Assistant">
+  <title>Profile Settings - TA Assistant</title>
+  <meta name="title" content="Profile Settings - TA Assistant">
   <meta name="description" content="">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ta-assistant-draft.netlify.app/">
-  <meta property="og:title" content="Profile - TA Assistant">
+  <meta property="og:title" content="Profile Settings - TA Assistant">
   <meta property="og:description" content="">
   <meta property="og:image" content="https://ta-assistant-draft.netlify.app/android-chrome-192x192.png">
 
@@ -41,12 +41,8 @@
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <a class="navbar-brand" href="profile-student.html">Profile</a>
+        <a class="navbar-brand" href="settings-profile-student.html">Profile Settings</a>
       </ul>
-
-      <form id="search" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-        <input type="search" class="form-control" placeholder="&#xF002; Find class" aria-label="Search" style="font-family:Arial, FontAwesome">
-      </form>
 
       <div class="dropdown text-end">
         <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -54,7 +50,7 @@
         </a>
         <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
           <li><a class="dropdown-item" href="profile-student.html">Profile</a></li>
-          <li><a class="dropdown-item" href="settings-profile.html">Settings</a></li>
+          <li><a class="dropdown-item" href="settings-profile-student.html">Settings</a></li>
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign out</a></li>
         </ul>
@@ -83,6 +79,16 @@
 
 <div class="container">
   <div class="row flex-lg-nowrap">
+    <div class="col-12 col-lg-auto mb-3" style="width: 200px;">
+      <div class="card p-3 setting-menu-box">
+        <div class="e-navlist e-navlist--active-bg">
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link px-2" href="settings-profile-student.html"><i class="fa fa-fw fa-user-circle mr-1"></i><span> Profile</span></a></li>
+            <li class="nav-item"><a class="nav-link px-2" href="settings-system-student.html"><i class="fa fa-fw fa-cog mr-1"></i><span> Settings</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <div class="col">
       <div class="row">
@@ -100,7 +106,13 @@
                     <div class="text-center text-sm-left mb-2 mb-sm-0">
                       <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap text-start">Chino Kafū</h4>
                       <p class="text-start">Rabbit</p>
-                      <!--                      <div class="text-muted text-start"> Year 2 </div>-->
+<!--                      <div class="text-muted text-start"> Year 2 </div>-->
+                      <div class="text-start">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fa fa-fw fa-camera"></i>
+                          <span>Change Photo</span>
+                        </button>
+                      </div>
                     </div>
                     <div class="text-sm-right">
                       <div class="text-end"><span class="badge bg-secondary">Student</span></div>
@@ -108,6 +120,9 @@
                     </div>
                   </div>
                 </div>
+                <ul class="nav nav-tabs">
+                  <li class="nav-item"><a href="" class="active nav-link">Settings</a></li>
+                </ul>
                 <div class="tab-content pt-3">
                   <div class="tab-pane active">
                     <form class="form" novalidate="">
@@ -117,7 +132,7 @@
                             <div class="col">
                               <div class="form-group">
                                 <label>Full Name</label>
-                                <input class="form-control" type="text" name="name" placeholder="Dead Inside" value="Chino Kafū" disabled readonly>
+                                <input class="form-control" type="text" name="name" placeholder="Dead Inside" value="Chino Kafū">
                               </div>
                             </div>
                             <div class="col">
@@ -141,7 +156,7 @@
                             <div class="col mb-3">
                               <div class="form-group">
                                 <label>Contact</label>
-                                <textarea rows="3" class="form-control" placeholder="Discord, Line ID or something that you use. ¯\_(ツ)_/¯" disabled readonly>
+                                <textarea class="form-control" rows="5" placeholder="Discord, Line ID or something that you use. ¯\_(ツ)_/¯">
 I don't have mobile.</textarea>
                               </div>
                             </div>
@@ -156,7 +171,7 @@ I don't have mobile.</textarea>
             </div>
             <div class="card-footer text-muted">
               <div class="col d-flex justify-content-end">
-                <button class="btn btn-primary" type="submit"><i class="fas fa-envelope"></i> Send Email</button>
+                <button class="btn btn-primary" type="submit"><i class="fas fa-save"></i> Save Changes</button>
               </div>
             </div>
           </div>
