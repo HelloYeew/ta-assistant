@@ -9,36 +9,39 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Primary Meta Tags -->
-  <title>Courses - TA Assistant</title>
-  <meta name="title" content="Courses - TA Assistant">
+  <title>Profile - TA Assistant</title>
+  <meta name="title" content="Profile - TA Assistant">
   <meta name="description" content="">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ta-assistant-draft.netlify.app/">
-  <meta property="og:title" content="Courses - TA Assistantt">
+  <meta property="og:title" content="Profile - TA Assistant">
   <meta property="og:description" content="">
   <meta property="og:image" content="https://ta-assistant-draft.netlify.app/android-chrome-192x192.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://ta-assistant-draft.netlify.app/">
-  <meta property="twitter:title" content="Courses - TA Assistant">
+  <meta property="twitter:title" content="Profile Settings - TA Assistant">
   <meta property="twitter:description" content="">
   <meta property="twitter:image" content="https://ta-assistant-draft.netlify.app/android-chrome-192x192.png">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link href="assets/css/custom-styles.css" rel="stylesheet" />
+  <link href="assets/css/markdown-box.css" rel="stylesheet" />
+  <link href="assets/css/code-highlight-styles/atom-one-dark.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/cebbc7821d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
 <header class="p-3 mb-3 border-bottom">
   <div class="container">
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <a class="navbar-brand" href="courses-student.html">Classes</a>
+        <a class="navbar-brand" href="profile-student.html">Profile</a>
       </ul>
 
       <form id="search" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -47,7 +50,7 @@
 
       <div class="dropdown text-end">
         <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="assets/img/profile/student.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          <img src="assets/img/profile/dead-inside.jpeg" alt="mdo" width="32" height="32" class="rounded-circle">
         </a>
         <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
           <li><a class="dropdown-item" href="profile-student.html">Profile</a></li>
@@ -78,96 +81,88 @@
   </div>
 </div>
 
-<div class="container px-4 py-5" id="custom-cards">
-
-  <h1>Welcome back, Chino Kafū!</h1>
-
-  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+<div class="container">
+  <div class="row flex-lg-nowrap">
 
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5" style="background-image: url('assets/img/bg/firework.jpeg');">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Computer Programming I</h2>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="assets/img/profile/pippi-ruleset.png" alt="Teacher" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center">
-              <i class="bi me-2 fas fa-user"></i>
-              <small>Pippi Osu</small>
-            </li>
-          </ul>
-          <a href="works-student.html" class="stretched-link"></a>
-        </div>
-      </div>
-    </div>
+      <div class="row">
+        <div class="col mb-3">
+          <div class="card setting-main-box">
+            <div class="card-body">
+              <div class="e-profile">
+                <div class="row">
+                  <div class="col-12 col-sm-auto mb-3">
+                    <div class="mx-auto" style="width: 140px;">
+                      <img class="rounded-circle" src="assets/img/profile/student.png" width=140px>
+                    </div>
+                  </div>
+                  <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
+                    <div class="text-center text-sm-left mb-2 mb-sm-0">
+                      <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap text-start">Chino Kafū</h4>
+                      <p class="text-start">Rabbit</p>
+                      <!--                      <div class="text-muted text-start"> Year 2 </div>-->
+                    </div>
+                    <div class="text-sm-right">
+                      <div class="text-end"><span class="badge bg-secondary">Student</span></div>
+                      <div class="text-muted text-end"><small>System ID : 70</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content pt-3">
+                  <div class="tab-pane active">
+                    <form class="form" novalidate="">
+                      <div class="row">
+                        <div class="col">
+                          <div class="row">
+                            <div class="col">
+                              <div class="form-group">
+                                <label>Full Name</label>
+                                <input class="form-control" type="text" name="name" placeholder="Dead Inside" value="Chino Kafū" disabled readonly>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="form-group">
+                                <label>ID</label>
+                                <div class="form-disabled">
+                                  <input class="form-control" type="text" name="number" placeholder="6xxxxxxxxx" value="6310545566" disabled readonly>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <div class="form-group">
+                                <label>Email</label>
+                                <input class="form-control" type="email" value="dead.i@ku.th" placeholder="chino.ka@example.com" disabled readonly>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col mb-3">
+                              <div class="form-group">
+                                <label>Contact</label>
+                                <textarea rows="3" class="form-control" placeholder="Discord, Line ID or something that you use. ¯\_(ツ)_/¯" disabled readonly>
+I don't have mobile.</textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
 
-    <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5" style="background-image: url('assets/img/bg/your-name.png');">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Computer Programming II</h2>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="assets/img/profile/kasumi.jpg" alt="Teacher" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center">
-              <i class="bi me-2 fas fa-user"></i>
-              <small>Kasumi Toyama</small>
-            </li>
-          </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+              <div class="col d-flex justify-content-end">
+                <button class="btn btn-primary" type="submit"><i class="fas fa-envelope"></i> Send Email</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5" style="background-image: url('assets/img/bg/your-name-2.png');">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Computer Programming III</h2>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="assets/img/profile/gura-slimz.jpg" alt="Teacher" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center">
-              <i class="bi me-2 fas fa-user"></i>
-              <small>Gawr Gura</small>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5" style="background-image: url('assets/img/bg/your-name-3.png');">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Computer Programming IV</h2>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="assets/img/profile/9arm-stunt.JPG" alt="Teacher" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center">
-              <i class="bi me-2 fas fa-user"></i>
-              <small>9arm</small>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5" style="background-image: url('assets/img/bg/rem.jpg');">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">ดิสครีทกล้วย แมททาแมติกส์</h2>
-          <ul class="d-flex list-unstyled mt-auto">
-            <li class="me-auto">
-              <img src="assets/img/profile/dead-inside.jpeg" alt="Teacher" width="32" height="32" class="rounded-circle border border-white">
-            </li>
-            <li class="d-flex align-items-center">
-              <i class="bi me-2 fas fa-user"></i>
-              <small>Dead Inside</small>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -203,11 +198,27 @@
   </div>
 </footer>
 
+</body>
+
 <!--Script-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <script src="assets/js/jquery-3.6.0.js"></script>
 <script src="assets/js/dark-mode-toggle.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="assets/js/markdown-box.js"></script>
+<script src="https://cdn.rawgit.com/toopay/bootstrap-markdown/master/js/bootstrap-markdown.js"></script>
+<script src="https://rawgit.com/lodev09/jquery-filedrop/master/jquery.filedrop.js"></script>
+<script src="https://rawgit.com/jeresig/jquery.hotkeys/master/jquery.hotkeys.js"></script>
+<!--<script data-require="marked@*" data-semver="0.3.1" src="http://cdnjs.cloudflare.com/ajax/libs/marked/0.3.1/marked.js"></script>-->
+<script src="assets/js/marked.js"></script>
+<link rel="stylesheet" href="https://cdn.rawgit.com/toopay/bootstrap-markdown/master/css/bootstrap-markdown.min.css" />
+<script src="assets/js/highlight.pack.js"></script>
+<script>
+  setInterval(function(){
+    hljs.highlightAll();
+  }, 700)
+</script>
+
 
 </body>
 </html>
