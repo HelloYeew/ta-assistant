@@ -131,6 +131,10 @@ div.font-awesome {
     font-family: Arial, FontAwesome;
 }
 
+div.submission-graded {
+    color: #0dcaf0
+}
+
 /*Dark mode*/
 
 body.dark-mode,
@@ -254,6 +258,11 @@ body.dark-mode .form-control {
 
 body.dark-mode a.breadcrumb-link-color {
     color: #97b6f3;
+}
+
+body.dark-mode .column-centered {
+    float: none;
+    margin: 0 auto;
 }
 
 /*Comment box in dark mode*/
