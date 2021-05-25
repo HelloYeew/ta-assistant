@@ -16,3 +16,4 @@ This preview use a following library
 - [Popper JS](https://popper.js.org/)
 - [Bootstrap Markdown](https://github.com/refactory-id/bootstrap-markdown)
 - [Marked](https://github.com/markedjs/marked)
+- [Bootstrap Select](https://github.com/snapappointments/bootstrap-select)
